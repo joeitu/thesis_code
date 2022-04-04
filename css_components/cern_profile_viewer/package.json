@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "npm ci --production",
+    "internal": "npx community-solid-server -c ./config-profile-viewer-internal.json -p 5001 -f data_internal",
+    "pod": "cp ./profile_viewer/dist/* ./template/; npx community-solid-server -c ./config-profile-viewer-pod-based.json -p 5002 -f data_pod "
+  },
+  "dependencies": {
+    "@solid/community-server": "2.0.1"
+  }
+}

@@ -1,0 +1,45 @@
+{
+    "name": "BadRequestHttpError",
+    "message": "Verification token not found. Please add the RDF triple <http://localhost:3003/b/profile/card#me> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> \"5823641e-077c-4c51-b9f6-e7fca11acb35\". to the WebID document at http://localhost:3003/b/profile/card to prove it belongs to you. You can remove this triple again after validation.",
+    "statusCode": 400,
+    "errorCode": "H400",
+    "details": {
+        "quad": "<http://localhost:3003/b/profile/card#me> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> \"5823641e-077c-4c51-b9f6-e7fca11acb35\"."
+    },
+    "prefilled": {
+        "email": "a@a.a",
+        "podName": "a",
+        "register": "on",
+        "createPod": "on",
+        "webId": "http://localhost:3003/b/profile/card#me"
+    },
+    "apiVersion": "0.2",
+    "authenticating": false,
+    "controls": {
+        "register": "http://localhost:3002/idp/register",
+        "forgotPassword": "http://localhost:3002/idp/forgotpassword",
+        "login": "http://localhost:3002/idp/login"
+    }
+}
+
+{
+    "name": "AssertionError",
+    "message": "Account already exists",
+    "statusCode": 500,
+    "prefilled": {
+        "email": "a@a.a",
+        "podName": "a",
+        "register": "on",
+        "createPod": "on",
+        "webId": "http://localhost:3003/b/profile/card#me"
+    },
+    "apiVersion": "0.2",
+    "authenticating": false,
+    "controls": {
+        "register": "http://localhost:3002/idp/register",
+        "forgotPassword": "http://localhost:3002/idp/forgotpassword",
+        "login": "http://localhost:3002/idp/login"
+    }
+}
+
+

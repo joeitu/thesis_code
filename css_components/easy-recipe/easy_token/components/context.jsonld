@@ -1,0 +1,10 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/componentsjs/^4.0.0/components/context.jsonld",
+    {
+      "ex": "https://example.jkl/",
+      "et": "ex:easy-token/",
+      "files-et": "et:^1.0.0/"
+    }
+  ]
+}

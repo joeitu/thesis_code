@@ -1,0 +1,80 @@
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CERN's profile viewer</title>
+    <!-- <script defer src="./index.js" ></script> -->
+    <link rel="stylesheet" href="/public/profile_viewer/main.css" />
+    <script defer src="/public/profile_viewer/main.js" ></script>
+    <script  src="./main.js" ></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="/public/profile_viewer/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- If not a WebID URL show this page ... -->
+    <div id="defaultPage"> </div>
+    <!-- ... otherwise show a profile card. -->
+    <button name="btnLogin" id="btnLogin">Login</button>
+    <div id="webIdCard" class="card">
+
+      <img id="labelImage" src="https://1000marcas.net/wp-content/uploads/2020/03/CERN-Logo-600x338.jpg" alt="CERN's profile picture" style="width:100%" >
+
+      <h1 id="labelFN"  class="normalMode">Full Name</h1>
+
+      <span class="editMode"> Full Name:</span>
+      <input id="labelFNEdit" class="editMode" ></input>
+
+      <h3 id="labelRole"  class="normalMode title" >Role</h3>
+
+      <span class="editMode"> Role:</span>
+      <input id="labelRoleEdit" class="editMode" ></input>
+
+      <h3 id="labelOrga" class="normalMode">Organization</h3>
+
+      <span class="editMode"> Organization:</span>
+      <input id="labelOrgaEdit" class="editMode" ></input>
+
+      <p id="labelNote" class="normalMode">Note</p>
+
+      <span class="editMode"> Notes:</span>
+      <input id="labelNoteEdit" class="editMode" ></input>
+
+      <button name="btnEdit" id="btnEdit" >Edit</button>
+      <button name="btnSave" id="btnSave" >Save</button>
+      <!--
+      <button name="btnEdit" id="btnSwitchEdit" >Switch Edit</button>
+      <button name="btnEdit" id="btnSwitchNormal" >Switch Normal</button>
+      -->
+
+      <!--
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <button id="btnContact" class="full-width" >Contact</button>
+      -->
+
+    </div>
+
+<!--
+     <div id="read" class="panel" >
+      <div class="row">
+        <label id="readlabel" for="webID">Enter a WebID: </label>
+        <input type="url" id="webID" name="webID"  size="50" pattern="https://.*"  value="https://dimou.solidcommunity.net/profile/card#me">
+        <button name="btnRead" id="btnRead" >Read Profile</button>
+      </div>
+      <dl class="display"> 
+          <dt>Profile SolidDataset: </dt>
+          <dd id="labelProfile"></dd>
+          <dt>Pod: </dt>
+          <dd id="labelPodName"></dd>
+          <dt>Is webId: </dt>
+          <dd id="labelBool"></dd>
+      </dl>
+     </div>
+
+-->
+  </body>
+</html>

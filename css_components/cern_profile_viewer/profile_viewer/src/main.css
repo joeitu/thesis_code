@@ -1,0 +1,48 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  overflow: hidden;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+input {
+  display: inline-block;
+}
+
+h1 h3 p {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+
+button:hover, a:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "npm ci --production",
+    "ram":  "npx community-solid-server -c ram-no-setup.json  -p 3001",
+    "disc": "npx community-solid-server -c file-no-setup.json -p 3002 -f ./file_data/"
+  },
+  "dependencies": {
+    "@solid/community-server": "2.0.1"
+  }
+}

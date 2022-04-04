@@ -1,0 +1,33 @@
+{
+  "name": "easy-token",
+  "version": "1.0.0",
+  "description": "Easy token allow you to verify you webid by the simple click of a button on the solid community server",
+  "lsd:module": "https://example.jkl/easy-token",
+  "lsd:contexts": {
+    "https://example.jkl/easy-token/^1.0.0/components/context.jsonld": "easy_token/components/context.jsonld"
+  },
+  "lsd:importPaths": {
+    "https://example.jkl/easy-token/^1.0.0/components/": "easy_token/components/",
+    "https://example.jkl/easy-token/^1.0.0/config/": "easy_token/config/",
+    "https://example.jkl/easy-token/^1.0.0/easy_token/": "easy_token/"
+  },
+  "scripts": {
+    "build": "npm ci",
+    "build-scripts": "webpack --config=webpack.config.prod.js",
+    "start": "npx community-solid-server -c config-easy-token.json",
+    "start-penny": "npx community-solid-server -c config-penny-easy-token.json"
+  },
+  "dependencies": {
+    "@inrupt/solid-client": "^1.14.0",
+    "@inrupt/solid-client-authn-browser": "^1.11.2",
+    "@inrupt/vocab-common-rdf": "^1.0.3",
+    "@solid/community-server": "2.0.1",
+    "buffer": "^6.0.3",
+    "penny-pod-inspector": "^0.408340065.1779949331"
+  },
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
+}
